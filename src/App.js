@@ -1,11 +1,21 @@
 import './App.css';
 import DashboardLayout from '../src/layout/DashboardLayout'
-import { BrowserRouter as Router } from 'react-router-dom'
+import TopNav from '../src/layout/TopNav'
+import Home from '../src/views/Home/Home'
+import Search from '../src/views/Search/Search'
+import Footer from './layout/Footer';
+import { BrowserRouter as Router,Switch,Route } from 'react-router-dom'
 function App() {
   return (
     <>
       <Router>
-        <DashboardLayout />
+         <TopNav/>
+               <Switch>
+                    <Route path='/' exact component={Home}></Route>
+                    
+                    <Route path='/search/:query' component={Search} ></Route>
+                </Switch>
+         <Footer/>
       </Router>
 
     </>

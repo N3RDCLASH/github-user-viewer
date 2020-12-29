@@ -10,7 +10,8 @@ const Content = () => {
             <Router>
                 <Switch>
                     <Route path='/' exact component={Home}></Route>
-                    <Route path='/search/:query' exact component={Search} ></Route>
+                    
+                    <Route path='/search/:query' component={Search} ></Route>
                 </Switch>
             </Router>
         </div>

@@ -13,10 +13,6 @@ const TopNav = () => {
         }
 
     }
-
-    const test = () => {
-        history.push({ pathname: `/search/${document.getElementById('search').value}`, state: { query: document.getElementById('search').value } })
-    }
     return (
         <nav>
             <div className="nav-wrapper bg-dark">
@@ -30,7 +26,6 @@ const TopNav = () => {
                         <label className="label-icon" htmlFor="search"><i className="material-icons">search</i></label>
                         <i className="material-icons">close</i>
                     </div>
-                    <a className="waves-effect waves-light btn" onClick={() => { test() }}>button</a>
                 </form>
             </div>
         </nav>
