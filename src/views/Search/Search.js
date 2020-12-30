@@ -1,37 +1,83 @@
 import { React, useEffect, useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
+import ProgressIndicator from '../../components/ProgressIndicator'
+import ResultItem from '../../components/ResultItem'
+import '../Search/Search.css'
 
 const Search = (props) => {
-    const { query } = props.match.params
+    const [{ query }, setQuery] = useState(props.match.params)
     const [result, setResult] = useState();
+    const [loaded, setLoaded] = useState(false);
 
-    useEffect(() => search(), [])
 
-    const search = async () => {
-        let request = await fetch(`https://api.github.com/search/users?q=${query}`)
-        let data = await request.json()
-        alert(data)
-        setResult(data)
+    useEffect(() => {
+        console.log(props)
+        console.log('rerender')
+        search(props.match.params.query)
+    }, [props])
+
+    const search = async (query) => {
+        setQuery(query)
+        const request = await fetch(`https://api.github.com/search/users?q=${query}`, {
+
+        }).then(handleErrors)
+            .then(res => res.json()).then(data => {
+                setResult(data)
+                setLoaded(true)
+
+                console.log(data)
+            }
+            ).catch(err => {
+                console.log(err)
+            })
+
     }
 
-    // search()
-    // console.log(typeof(search().items))
-    return (
-        <div id="result_list" >
-            {/* <ul class="collection"></ul>
-            {result.items.map(x => (
-                <li key={x.id} className="collection-item avatar">
-                    <img src="images/yuna.jpg" alt="" className="circle" />
-        <span className="title">{x.login}</span>
-      <p>First Line <br></br>
-         Second Line
-      </p>
-      <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
-                </li>
-            ))} */}
-            {/* {result.items.map(x=>(<li key={x.id}>{x.login}</li>))} */}
+    function handleErrors(response) {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        return response;
+    }
 
+    const cardStyle = {
+        boxShadow: "none",
+        backgroundColor: "transparent",
+
+    }
+    const linkStyle = {
+        display: "grid",
+        gridGgap: "1rem",
+        gridTemplateColumns: "repeat(3,1fr)"
+    }
+
+    return (
+        <div className="row">
+            <div className="">
+                <div className="center">
+                    {!loaded && !result ? null : (`Found ${result.total_count} results for ${query}`)}
+                </div>
+                {!loaded && !result ?
+                    <div className="col m1 offset-m5 s1 offset-s5">
+                        <ProgressIndicator />
+                    </div>
+                    :
+                    <div id="result_list" className="" >
+                        <ul style={{ backgroundColor: "transparent", border: "none" }} className="collection grid">
+                            {result.items.map(user => (
+                                <Link className="" to={'/user/' + user.login}>
+                                    <div style={cardStyle} className="card">
+
+                                        <ResultItem user={user} key={user.id} />
+                                    </div>
+                                </Link>
+                            ))}
+                        </ul>
+                    </div>
+                }
+            </div>
         </div>
+
     )
 
 }

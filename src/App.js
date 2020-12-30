@@ -10,11 +10,13 @@ function App() {
     <>
       <Router>
          <TopNav/>
+         <div id="main">
                <Switch>
                     <Route path='/' exact component={Home}></Route>
                     
                     <Route path='/search/:query' component={Search} ></Route>
                 </Switch>
+         </div>
          <Footer/>
       </Router>
 

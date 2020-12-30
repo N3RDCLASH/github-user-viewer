@@ -29,8 +29,10 @@ nav form i {
   background-color: #323333;
 }
 
-#content {
-  padding-bottom: 2.5rem;
+#main {
+  /* padding-bottom: 2.5rem; */
+  height: calc(100vh - (64px + 3.5rem)) ;
+  overflow-y: scroll;
 }
 #footer p {
 }
