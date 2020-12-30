@@ -1,0 +1,10 @@
+#notfound_graphic {
+    background-image: url(../../assets/images/undraw_page_not_found_su7k.svg);
+    background-size: contain;
+    background-position: center;
+    /* background-color: antiquewhite; */
+    height: 65vh;
+    margin: 5vh 0;
+    background-repeat: no-repeat;
+  }
+  
