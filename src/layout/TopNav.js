@@ -15,7 +15,7 @@ const TopNav = () => {
     return (
         <nav>
             <div className="nav-wrapper bg-dark">
-                <Link href="/" className="brand-logo left"><img src={logo} alt="" /></Link>
+                <Link to="/" className="brand-logo left"><img src={logo} alt="" /></Link>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
 
                 </ul>
