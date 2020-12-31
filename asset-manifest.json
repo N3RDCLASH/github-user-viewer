@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/github-user-viewer/static/css/main.3774b63e.chunk.css",
-    "main.js": "/github-user-viewer/static/js/main.a76157e4.chunk.js",
-    "main.js.map": "/github-user-viewer/static/js/main.a76157e4.chunk.js.map",
+    "main.css": "/github-user-viewer/static/css/main.89e0c1d2.chunk.css",
+    "main.js": "/github-user-viewer/static/js/main.20e1a1e6.chunk.js",
+    "main.js.map": "/github-user-viewer/static/js/main.20e1a1e6.chunk.js.map",
     "runtime-main.js": "/github-user-viewer/static/js/runtime-main.1cc51239.js",
     "runtime-main.js.map": "/github-user-viewer/static/js/runtime-main.1cc51239.js.map",
     "static/css/2.d379a115.chunk.css": "/github-user-viewer/static/css/2.d379a115.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.e3888499.chunk.js.map": "/github-user-viewer/static/js/3.e3888499.chunk.js.map",
     "index.html": "/github-user-viewer/index.html",
     "static/css/2.d379a115.chunk.css.map": "/github-user-viewer/static/css/2.d379a115.chunk.css.map",
-    "static/css/main.3774b63e.chunk.css.map": "/github-user-viewer/static/css/main.3774b63e.chunk.css.map",
+    "static/css/main.89e0c1d2.chunk.css.map": "/github-user-viewer/static/css/main.89e0c1d2.chunk.css.map",
     "static/js/2.c84d66c5.chunk.js.LICENSE.txt": "/github-user-viewer/static/js/2.c84d66c5.chunk.js.LICENSE.txt",
     "static/media/material-icons.css": "/github-user-viewer/static/media/MaterialIcons-Regular.cff684e5.woff2",
     "static/media/git.0a375b45.svg": "/github-user-viewer/static/media/git.0a375b45.svg",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.1cc51239.js",
     "static/css/2.d379a115.chunk.css",
     "static/js/2.c84d66c5.chunk.js",
-    "static/css/main.3774b63e.chunk.css",
-    "static/js/main.a76157e4.chunk.js"
+    "static/css/main.89e0c1d2.chunk.css",
+    "static/js/main.20e1a1e6.chunk.js"
   ]
 }
