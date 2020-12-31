@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import logo from '../assets/images/GitHub-Mark-Light-64px.png'
 
 const TopNav = () => {
@@ -15,7 +15,7 @@ const TopNav = () => {
     return (
         <nav>
             <div className="nav-wrapper bg-dark">
-                <a href="/" className="brand-logo left"><img src={logo} alt="" /></a>
+                <Link href="/" className="brand-logo left"><img src={logo} alt="" /></Link>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
 
                 </ul>
