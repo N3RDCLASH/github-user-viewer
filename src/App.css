@@ -8,7 +8,7 @@
     padding-left: 3rem;
   }
   .input-field input[type=search] ~ .material-icons{
-    right:3rem!important;
+    right: -2rem!important;
   }
 }
 :root {
