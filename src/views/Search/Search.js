@@ -12,14 +12,11 @@ const Search = (props) => {
 
 
     useEffect(() => {
-        console.log(props)
-        console.log('rerender')
         setQuery(props.match.params.query)
         search(props.match.params.query)
     }, [props])
 
     const search = async (query) => {
-        console.log(query)
         const request = await fetch(`https://api.github.com/search/users?q=${query}`, {
         }).then(handleErrors)
             .then(async res => {

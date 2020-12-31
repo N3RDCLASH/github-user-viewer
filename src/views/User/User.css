@@ -1,3 +1,16 @@
+:root {
+    --light-grey: rgb(202, 196, 196);
+    --blue: #388bfc;
+}
+
+.light-grey {
+    background-color: var(--light-grey);
+}
+
+.light-grey-text {
+    color: var(--light-grey);
+}
+
 .location {
     margin-top: 1em;
     display: flex;
@@ -7,22 +20,74 @@
     margin-top: 0.5em;
     margin-bottom: 1em;
     display: flex;
-    padding: 10px;
-    border-bottom: 1px solid#dacece;
+    padding: 12px;
+    border-bottom: 1px solid#ddd;
+}
+
+#followers {
+    overflow-y: scroll;
+    height: calc(100vh - (64px + 4.2rem));
 }
 
 .follower-avatar {
     border-radius: 50%;
+    margin-right: 10px;
+}
+
+.follower-name {
+    font-size: 16px;
+}
+
+#repos {
+    overflow-y: scroll;
+    height: calc(100vh - (64px + 4.2rem));
+}
+
+.repo {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: var(--bg-dark);
+}
+
+.repo .name {
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.repo .description {}
+
+.repo .stat {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.repo .stats {
+    justify-content: start;
+    margin-top: 2em;
+}
+.repo .stat:last-child{
+    align-self: flex-end;
+    margin-left: auto;
 }
 
 .user-information {
     margin-top: 5px;
+    width: max-content;
 }
 
 .user-avatar {
     border-radius: 50%;
     margin-top: 1em;
-    border: 1px solid #dacece;
+    border: 1px solid #ddd;
+    max-width: 260px;
+    max-height: 260px;
+    width: 100%;
+    height: auto;
 }
 
 .user-name+.user-login {
@@ -49,10 +114,11 @@
     align-items: flex-start;
 }
 
-.stat {
+ .stat {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-right: 15px;
 }
 
 .stat i.material-icons {
@@ -61,4 +127,8 @@
 
 .stat span:first-child {
     display: flex;
+}
+
+.stat span text{
+    color: gray;
 }

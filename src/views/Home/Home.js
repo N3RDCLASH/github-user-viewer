@@ -1,7 +1,6 @@
 import React from 'react'
 import '../Home/Home.css'
 const Home = (props) => {
-console.log(props.match)
     return (
         <>
             <div id="home_graphic">

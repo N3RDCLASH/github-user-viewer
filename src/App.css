@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+  .brand-logo > img {
+    height: 50px;
+    margin: 5px 10px!important;
+  }
+}
 :root {
   --bg-dark: #0d1117;
 }

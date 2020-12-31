@@ -7,7 +7,6 @@ const TopNav = () => {
 
     function search(input) {
         if (input.key === 'Enter') {
-            console.log(input)
             input.nativeEvent.preventDefault();
             history.push({ pathname: `/search/${input.target.value}`, state: { query: input.target.value } })
         }
