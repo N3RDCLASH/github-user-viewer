@@ -31,7 +31,7 @@ nav form i {
 
 #main {
   /* padding-bottom: 2.5rem; */
-  height: calc(100vh - (64px + 3.5rem)) ;
+  height: calc(100vh - (64px + 2.9rem)) ;
   overflow-y: scroll;
 }
 #footer p {

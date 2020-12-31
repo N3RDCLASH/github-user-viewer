@@ -1,11 +1,12 @@
 import { React, useEffect, useState } from 'react'
 import { useHistory, Link } from 'react-router-dom'
+import { getPagination } from 'header-pagination'
 import ProgressIndicator from '../../components/ProgressIndicator'
 import ResultItem from '../../components/ResultItem'
 import '../Search/Search.css'
 
 const Search = (props) => {
-    const [{ query }, setQuery] = useState(props.match.params)
+    const [query, setQuery] = useState(props.match.params.query)
     const [result, setResult] = useState();
     const [loaded, setLoaded] = useState(false);
 
@@ -13,19 +14,21 @@ const Search = (props) => {
     useEffect(() => {
         console.log(props)
         console.log('rerender')
+        setQuery(props.match.params.query)
         search(props.match.params.query)
     }, [props])
 
     const search = async (query) => {
-        setQuery(query)
+        console.log(query)
         const request = await fetch(`https://api.github.com/search/users?q=${query}`, {
-
         }).then(handleErrors)
-            .then(res => res.json()).then(data => {
-                setResult(data)
+            .then(async res => {
+                const pagination = getPagination(res.headers)
+                const json = await res.json()
+                return ({pagination,json})
+            }).then(data => {
+                setResult(data.json)
                 setLoaded(true)
-
-                console.log(data)
             }
             ).catch(err => {
                 console.log(err)
@@ -65,10 +68,10 @@ const Search = (props) => {
                     <div id="result_list" className="" >
                         <ul style={{ backgroundColor: "transparent", border: "none" }} className="collection grid">
                             {result.items.map(user => (
-                                <Link className="" to={'/user/' + user.login}>
+                                <Link key={user.id} className="" to={'/user/' + user.login}>
                                     <div style={cardStyle} className="card">
 
-                                        <ResultItem user={user} key={user.id} />
+                                        <ResultItem user={user}  />
                                     </div>
                                 </Link>
                             ))}

@@ -9,7 +9,7 @@ const ResultItem = (props) => {
     return (
         <>
             <li style={style} key={props.user.id} className="collection-item avatar">
-                <img src={props.user.avatar_url} alt="" className="circle" />
+                {<img src={props.user.avatar_url} alt="" className="circle" />}
                 <span className="title white-text">{props.user.login}</span>
                 <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
             </li>
