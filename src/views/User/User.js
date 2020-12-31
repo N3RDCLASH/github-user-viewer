@@ -36,10 +36,10 @@ const User = (props) => {
         <div className='row'>
             <div className="col m3 s12" id="profile">
                 {!userData ? <div className="col m1 offset-m5"> <ProgressIndicator /></div> :
-                    <div className="col m12">
+                    <div className="col s12 m12">
                         <img className="user-avatar" src={userData.avatar_url}
                             alt="" />
-                        <div className="user-information">
+                        <div className="user-information center">
                             <span className="user-name ">{userData.name}</span>
                             <br />
                             <span className="user-login">@{userData.login}</span>

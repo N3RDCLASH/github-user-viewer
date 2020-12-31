@@ -21,7 +21,7 @@ const TopNav = () => {
                 </ul>
                 <form className="bg-dark">
                     <div className="input-field">
-                        <input id="search" placeholder="Search for Github User..." type="search" onKeyDown={search} required />
+                        <input id="search" placeholder="Search for User..." type="search" onKeyDown={search} required />
                         <label className="label-icon" htmlFor="search"><i className="material-icons">search</i></label>
                         <i className="material-icons">close</i>
                     </div>
