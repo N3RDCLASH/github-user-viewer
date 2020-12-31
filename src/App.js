@@ -5,9 +5,11 @@ import Home from '../src/views/Home/Home'
 import User from '../src/views/User/User';
 import Search from '../src/views/Search/Search'
 import Footer from './layout/Footer';
+import M from 'materialize-css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NotFound from './views/NotFound/NotFound';
 function App() {
+  M.AutoInit()
   return (
     <>
       <Router basename={process.env.PUBLIC_URL}>
