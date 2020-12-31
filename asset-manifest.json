@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/github-user-viewer/static/css/main.b50a61de.chunk.css",
-    "main.js": "/github-user-viewer/static/js/main.20e1a1e6.chunk.js",
-    "main.js.map": "/github-user-viewer/static/js/main.20e1a1e6.chunk.js.map",
-    "runtime-main.js": "/github-user-viewer/static/js/runtime-main.1cc51239.js",
-    "runtime-main.js.map": "/github-user-viewer/static/js/runtime-main.1cc51239.js.map",
+    "main.js": "/github-user-viewer/static/js/main.24a5984f.chunk.js",
+    "main.js.map": "/github-user-viewer/static/js/main.24a5984f.chunk.js.map",
+    "runtime-main.js": "/github-user-viewer/static/js/runtime-main.258de23a.js",
+    "runtime-main.js.map": "/github-user-viewer/static/js/runtime-main.258de23a.js.map",
     "static/css/2.d379a115.chunk.css": "/github-user-viewer/static/css/2.d379a115.chunk.css",
-    "static/js/2.c84d66c5.chunk.js": "/github-user-viewer/static/js/2.c84d66c5.chunk.js",
-    "static/js/2.c84d66c5.chunk.js.map": "/github-user-viewer/static/js/2.c84d66c5.chunk.js.map",
-    "static/js/3.e3888499.chunk.js": "/github-user-viewer/static/js/3.e3888499.chunk.js",
-    "static/js/3.e3888499.chunk.js.map": "/github-user-viewer/static/js/3.e3888499.chunk.js.map",
+    "static/js/2.f486c526.chunk.js": "/github-user-viewer/static/js/2.f486c526.chunk.js",
+    "static/js/2.f486c526.chunk.js.map": "/github-user-viewer/static/js/2.f486c526.chunk.js.map",
+    "static/js/3.c5cd5e3e.chunk.js": "/github-user-viewer/static/js/3.c5cd5e3e.chunk.js",
+    "static/js/3.c5cd5e3e.chunk.js.map": "/github-user-viewer/static/js/3.c5cd5e3e.chunk.js.map",
     "index.html": "/github-user-viewer/index.html",
     "static/css/2.d379a115.chunk.css.map": "/github-user-viewer/static/css/2.d379a115.chunk.css.map",
     "static/css/main.b50a61de.chunk.css.map": "/github-user-viewer/static/css/main.b50a61de.chunk.css.map",
-    "static/js/2.c84d66c5.chunk.js.LICENSE.txt": "/github-user-viewer/static/js/2.c84d66c5.chunk.js.LICENSE.txt",
+    "static/js/2.f486c526.chunk.js.LICENSE.txt": "/github-user-viewer/static/js/2.f486c526.chunk.js.LICENSE.txt",
     "static/media/material-icons.css": "/github-user-viewer/static/media/MaterialIcons-Regular.cff684e5.woff2",
     "static/media/git.0a375b45.svg": "/github-user-viewer/static/media/git.0a375b45.svg",
     "static/media/Home.css": "/github-user-viewer/static/media/undraw_developer_activity_bv83.51798020.svg",
     "static/media/NotFound.css": "/github-user-viewer/static/media/undraw_page_not_found_su7k.5788b585.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1cc51239.js",
+    "static/js/runtime-main.258de23a.js",
     "static/css/2.d379a115.chunk.css",
-    "static/js/2.c84d66c5.chunk.js",
+    "static/js/2.f486c526.chunk.js",
     "static/css/main.b50a61de.chunk.css",
-    "static/js/main.20e1a1e6.chunk.js"
+    "static/js/main.24a5984f.chunk.js"
   ]
 }
